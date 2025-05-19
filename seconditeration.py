@@ -114,14 +114,15 @@ with st.form("project_form"):
         security = st.checkbox("Security Measures")
 
     # Regulatory
+   # Regulatory
     with st.expander("📑 Regulatory"):
         st.markdown("#### Regulatory Compliance")
         c1, c2 = st.columns([1, 1])
-        standards = c1.text_area("Applicable Standards", height=60)
-        certificates = c2.text_area("Required Certificates", height=60)
+        standards = c1.text_area("Applicable Standards", height=68)
+        certificates = c2.text_area("Required Certificates", height=68)
         c3, c4 = st.columns([1, 1])
-        permits = c3.text_area("Permits Needed", height=60)
-        training = c4.text_area("Training Requirements", height=60)
+        permits = c3.text_area("Permits Needed", height=68)
+        training = c4.text_area("Training Requirements", height=68)
 
     submitted = st.form_submit_button("Submit All Details")
 
